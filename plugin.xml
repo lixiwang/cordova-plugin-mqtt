@@ -24,9 +24,9 @@
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="CordovaMQTTPlugin"><param name="ios-package" value="CordovaMQTTPlugin" /></feature>
+            <feature name="CordovaMqTTPlugin"><param name="ios-package" value="CordovaMqTTPlugin" /></feature>
         </config-file>
-        <source-file src="src/ios/CordovaMQTTPlugin.m" />
+        <source-file src="src/ios/CordovaMqTTPlugin.m" />
         <header-file src="src/ios/MQTTAsync.h" />
 		<header-file src="src/ios/MQTTClientPersistence.h" />
     </platform>

@@ -2,16 +2,17 @@
 
 #import <Cordova/CDV.h>
 #import "MQTTAsync.h"
-@interface CDVCordovaMQTTPlugin : CDVPlugin {
+
+@interface CordovaMqTTPlugin : CDVPlugin {
   // Member variables go here.
 }
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command;
+- (void)connect:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation CDVCordovaMQTTPlugin
+@implementation CordovaMqTTPlugin
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command
+- (void)connect:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
     NSString* echo = [command.arguments objectAtIndex:0];
