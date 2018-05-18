@@ -54,7 +54,7 @@ exports.connect = function (args) {
     }
     if (url.length > 0 && urgx.exec(url) !== null) {
         exec(function (cd) {
-            //console.log("data",cd);
+            console.log("data **** Segio",cd.call);
             switch (cd.call) {
                 case "connected":
                     delete cd.call;
